@@ -1,0 +1,30 @@
+Curso normal de eventos:
+
+1. El crupier baraja las cartas.
+2. El jugador apuesta.
+3. El crupier se reparte una carta a sí mismo.
+4. El crupier reparte dos cartas visibles al jugador.
+5. El jugador pide una carta.
+6. Se cuenta el valor de la mano del jugador.
+7. El crupier se reparte una carta a sí mismo.
+8. Se cuenta el valor de la mano del crupier.
+9. Se determina el ganador.
+10. El ganador recibe el doble de lo que apostó.
+
+Caminos alternativos
+
+En el paso 5, si el jugador desea plantarse, no existe este paso y se continúa con el paso 6.
+
+En el paso 6, si el jugador desea otra carta, se vuelve al paso 5.
+
+En el paso 6, si el valor de la mano del jugador supera los 21 puntos, el jugador pierde su apuesta automáticamente y se resuelve el paso 10.
+
+En el paso 8, si el valor de la mano del crupier es 16 o menos se vuelve al paso 7.
+
+En el paso 8, si el valor de la mano del crupier supera los 21 puntos, el jugador gana la apuesta automáticamente y se resuelve el paso 10.
+
+Caminos de excepción
+
+En el paso 2, si el jugador escribe una apuesta no válida, el sistema volverá a solicitar que escriba su apuesta.
+
+
