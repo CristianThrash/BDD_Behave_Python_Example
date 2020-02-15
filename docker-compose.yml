@@ -1,0 +1,5 @@
+version: '2'
+services:
+  python_21_test:
+    build: ./
+    command: behave barajar.feature contar.feature ganador.feature
